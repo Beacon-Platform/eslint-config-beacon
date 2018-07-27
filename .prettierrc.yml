@@ -1,0 +1,9 @@
+# printWidth: 80 # 80
+tabWidth: 2 # 2 -- redundant with .editorconfig
+# useTabs: false # false -- redundant with .editorconfig
+semi: true # true
+singleQuote: true # false
+trailingComma: all # none | es5 | all
+# bracketSpacing: true # true
+# jsxBracketSameLine: false # false
+# arrowParens: avoid # avoid | always
