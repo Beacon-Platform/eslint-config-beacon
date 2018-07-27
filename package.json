@@ -22,7 +22,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/hokevins/eslint-config-beacon"
+        "url": "https://gitlab.wsq.io/kevin.ho/eslint-config-beacon"
     },
     "keywords": [
         "eslint",
@@ -31,12 +31,8 @@
         "linter",
         "lint"
     ],
-    "author": "Kevin Ho <kevin.ho@beacon.io> (https://github.com/hokevins)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/hokevins/eslint-config-beacon/issues"
-    },
-    "homepage": "https://github.com/hokevins/eslint-config-beacon#readme",
+    "author": "Kevin Ho <kevin.ho@beacon.io> (https://gitlab.wsq.io/kevin.ho/eslint-config-beacon)",
+    "homepage": "https://gitlab.wsq.io/kevin.ho/eslint-config-beacon#readme",
     "devDependencies": {
         "babel-eslint": "^8.2.6",
         "chai": "^4.1.2",
