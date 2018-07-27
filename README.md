@@ -6,14 +6,14 @@
 
 ### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [Beacon Platform, Inc.](https://www.beacon.io/) JavaScript Developers
 
-## Installation
+## Step 1:  Installation
 
 ### Global
 
 Global installation is recommended for [Beacon Platform, Inc.](https://www.beacon.io/) JavaScript developers. To install or upgrade the config along with its peer dependencies:
 
 ```sh
-npm install -g git+ssh://git@gitlab.wsq.io:kevin.ho/eslint-config-beacon.git eslint-plugin-react babel-eslint
+npm install -g git+ssh://git@gitlab.wsq.io:kevin.ho/eslint-config-beacon.git eslint eslint-plugin-react babel-eslint
 ```
 
 In your global `~/.eslintrc.json` file:
@@ -42,6 +42,12 @@ A specific project can extend this definition by including `eslint eslint-config
 ### Note on Parsing
 
 This config now uses `babel-eslint` as the parser by default. This enables linting some relatively modern code which ESLint's default parser does not handle, and was necessary for this project to lint itself. You still need to install `babel-eslint` manually as it is a peer dependency of this config.
+
+## Step 2:  Editor Integration
+
+Using ESLint from the command line is not ideal. We want to integrate linting as an automatic step in our workflow, and even better -- as a background step in our code editor of choice. In this way, your editor will produce colored warnings and error marks in real-time as you write code. Beyond saving you from making mistakes, it also actively and effectively helps you to avoid definite errors and maintain a consistent company-wide code style.
+
+Directions for ESLint's various editor integrations can be found [here](https://eslint.org/docs/user-guide/integrations#editors). ESLint is platform agnostic, so it works with WebStorm, VSCode, SublimeText, Atom, even Emacs and PyCharm!
 
 ## Extending
 
