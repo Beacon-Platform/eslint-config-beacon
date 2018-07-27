@@ -13,14 +13,15 @@
 Global installation is recommended for [Beacon Platform, Inc.](https://www.beacon.io/) JavaScript developers. To install or upgrade the config along with its peer dependencies:
 
 ```sh
-npm install -g eslint eslint-config-beacon eslint-plugin-react babel-eslint
+npm install -g git+ssh://git@gitlab.wsq.io:kevin.ho/eslint-config-beacon.git eslint-plugin-react babel-eslint
 ```
 
 In your global `~/.eslintrc.json` file:
 
 ```json
 {
-    "extends": "beacon"
+    "extends": "beacon",
+    "parser": "babel-eslint"
 }
 ```
 
@@ -33,6 +34,7 @@ A specific project can extend this definition by including `eslint eslint-config
 ```json
 {
     "extends": "beacon",
+    "parser": "babel-eslint",
     "root": true
 }
 ```
@@ -54,7 +56,7 @@ Any [rules](http://eslint.org/docs/rules/) added to your global or local `.eslin
 }
 ```
 
-This turns on enforcing the use of semicolons, a rule which is already turned on by default in the current version of the `eslint-config-beacon` package.
+This turns on enforcing the use of semicolons, a rule which is ALREADY turned on by default in the current version of the `eslint-config-beacon` package.
 
 ## Background
 
@@ -65,7 +67,3 @@ This npm package provides a thorough starting config file. It was developed at [
 This package was bootstrapped via [Fullstack Academy of Code / Grace Hopper Academy's](http://www.fullstackacademy.com/) `eslint-config-fullstack` package.
 
 It is easy to override and extend this base config with custom rules, [as explained above and in the ESLint docs](http://eslint.org/docs/user-guide/configuring#using-a-shareable-configuration-package).
-
-## License
-
-MIT
