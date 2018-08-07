@@ -1,51 +1,51 @@
 {
-    "name": "eslint-config-beacon",
-    "version": "1.0.0",
-    "description": "a complete starter ESLint config file to help JavaScript developers avoid errors and maintain consistent code style",
-    "main": "index.js",
-    "scripts": {
-        "lint": "eslint ./ --ignore-path .gitignore",
-        "lint-fix": "npm run lint -- --fix",
-        "prettify": "prettier --write \"**/*.{js,json,md}\"",
-        "test": "mocha"
-    },
-    "lint-staged": {
-        "*.{js}": [
-            "prettier --write",
-            "npm run lint-fix",
-            "git add"
-        ],
-        "*.{json,md}": [
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://gitlab.wsq.io/kevin.ho/eslint-config-beacon"
-    },
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "eslintrc",
-        "linter",
-        "lint"
+  "name": "eslint-config-beacon",
+  "version": "1.0.0",
+  "description": "a complete starter ESLint config file to help JavaScript developers avoid errors and maintain consistent code style",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint-fix": "npm run lint -- --fix",
+    "prettify": "prettier --write \"**/*.{js,json,md}\"",
+    "test": "mocha"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write",
+      "npm run lint-fix",
+      "git add"
     ],
-    "author": "Kevin Ho <kevin.ho@beacon.io> (https://gitlab.wsq.io/kevin.ho/eslint-config-beacon)",
-    "homepage": "https://gitlab.wsq.io/kevin.ho/eslint-config-beacon#readme",
-    "devDependencies": {
-        "babel-eslint": "^8.2.6",
-        "chai": "^4.1.2",
-        "eslint": "~5.0.1",
-        "eslint-plugin-react": "~7.10.0",
-        "lint-staged": "^7.0.3",
-        "mocha": "^5.0.5",
-        "prettier": "^1.11.1"
-    },
-    "peerDependencies": {
-        "eslint": "^5.0.1",
-        "eslint-plugin-react": "^7.10.0",
-        "babel-eslint": "^8.2.6"
-    },
-    "dependencies": {}
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Beacon-Platform/eslint-config-beacon"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslintrc",
+    "linter",
+    "lint"
+  ],
+  "author": "Kevin Ho <kevin.ho@beacon.io>",
+  "homepage": "https://github.com/Beacon-Platform/eslint-config-beacon#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.1.2",
+    "eslint": "~5.0.1",
+    "eslint-plugin-react": "~7.10.0",
+    "lint-staged": "^7.0.3",
+    "mocha": "^5.0.5",
+    "prettier": "^1.11.1"
+  },
+  "peerDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-plugin-react": "^7.10.0",
+    "babel-eslint": "^8.2.6"
+  },
+  "dependencies": {}
 }
